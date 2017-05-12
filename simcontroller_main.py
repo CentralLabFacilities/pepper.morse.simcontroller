@@ -1,7 +1,7 @@
 import sys
 from PyQt4 import QtGui
 from simcontroller import Ui_SimController
-from middleware import Talker
+from simcontroller_middleware import Talker
 
 
 class Editor(QtGui.QMainWindow):
