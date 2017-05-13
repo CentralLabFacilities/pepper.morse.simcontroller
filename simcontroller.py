@@ -63,7 +63,7 @@ class Ui_SimController(object):
         # self.HumanWave = QtGui.QLineEdit(self.tab_3)
         # self.HumanWave.setGeometry(QtCore.QRect(170, 20, 141, 27))
         # self.HumanWave.setObjectName(_fromUtf8("HumanWave"))
-        # self.tabWidget.addTab(self.tab_3, _fromUtf8(""))
+        self.tabWidget.addTab(self.tab_3, _fromUtf8(""))
         SimController.setCentralWidget(self.centralWidget)
         self.mainToolBar = QtGui.QToolBar(SimController)
         self.mainToolBar.setObjectName(_fromUtf8("mainToolBar"))
