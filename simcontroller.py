@@ -39,6 +39,12 @@ class Ui_SimController(object):
         self.CloseDoor = QtGui.QPushButton(self.tab)
         self.CloseDoor.setGeometry(QtCore.QRect(10, 50, 99, 27))
         self.CloseDoor.setObjectName(_fromUtf8("CloseDoor"))
+
+        self.doorSelector = QtGui.QComboBox(self.tab)
+        self.doorSelector.setGeometry(QtCore.QRect(150, 20, 99, 27))
+        self.CloseDoor.setObjectName(_fromUtf8("doorSelector"))
+        self.doorSelector.addItems(['Auto_Door', 'Cube.005', 'Cube.006', 'Cube.011'])
+
         self.tabWidget.addTab(self.tab, _fromUtf8(""))
         self.tab_2 = QtGui.QWidget()
         self.tab_2.setObjectName(_fromUtf8("tab_2"))
