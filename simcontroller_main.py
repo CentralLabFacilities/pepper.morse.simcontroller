@@ -9,7 +9,7 @@ class Editor(QtGui.QMainWindow):
         super(Editor, self).__init__()
         self.ui = Ui_SimController()
         self.ui.setupUi(self)
-        fake_say_service = Talker("talk")
+        fake_say_service = Talker("/hri_sim/talk")
         fake_rec_service = Talker("/pepper_robot/speechrec/context")
         opendoor_service = Talker("/hri_sim/opendoor")
         wave_service = Talker("/hri_sim/wave")
