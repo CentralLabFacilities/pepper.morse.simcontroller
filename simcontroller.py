@@ -43,7 +43,8 @@ class Ui_SimController(object):
         self.doorSelector = QtGui.QComboBox(self.tab)
         self.doorSelector.setGeometry(QtCore.QRect(150, 20, 99, 27))
         self.CloseDoor.setObjectName(_fromUtf8("doorSelector"))
-        self.doorSelector.addItems(['Auto_Door', 'Cube.005', 'Cube.006', 'Cube.011'])
+        # TODO fix this for a specific setting, or make this generally applicable
+        self.doorSelector.addItems(['All', 'Auto_Door', 'Cube.005', 'Cube.006', 'Cube.011'])
 
         self.tabWidget.addTab(self.tab, _fromUtf8(""))
         self.tab_2 = QtGui.QWidget()
