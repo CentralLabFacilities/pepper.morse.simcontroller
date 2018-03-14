@@ -16,11 +16,14 @@ except AttributeError:
 
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
+
+
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig, _encoding)
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
+
 
 class Ui_SimController(object):
     def setupUi(self, SimController):
@@ -35,14 +38,14 @@ class Ui_SimController(object):
         self.tab.setObjectName(_fromUtf8("tab"))
         self.openDoor = QtGui.QPushButton(self.tab)
         self.openDoor.setGeometry(QtCore.QRect(10, 20, 99, 27))
-        self.openDoor.setObjectName(_fromUtf8("openDoor"))
-        self.CloseDoor = QtGui.QPushButton(self.tab)
-        self.CloseDoor.setGeometry(QtCore.QRect(10, 50, 99, 27))
-        self.CloseDoor.setObjectName(_fromUtf8("CloseDoor"))
+        self.openDoor.setObjectName(_fromUtf8("OpenDoor"))
+        self.closeDoor = QtGui.QPushButton(self.tab)
+        self.closeDoor.setGeometry(QtCore.QRect(10, 50, 99, 27))
+        self.closeDoor.setObjectName(_fromUtf8("CloseDoor"))
 
         self.doorSelector = QtGui.QComboBox(self.tab)
         self.doorSelector.setGeometry(QtCore.QRect(150, 20, 99, 27))
-        self.CloseDoor.setObjectName(_fromUtf8("doorSelector"))
+        self.closeDoor.setObjectName(_fromUtf8("doorSelector"))
         # TODO fix this for a specific setting, or make this generally applicable
         self.doorSelector.addItems(['All', 'Auto_Door', 'Cube.005', 'Cube.006', 'Cube.011'])
 
@@ -93,7 +96,7 @@ class Ui_SimController(object):
     def retranslateUi(self, SimController):
         SimController.setWindowTitle(_translate("SimController", "SimController", None))
         self.openDoor.setText(_translate("SimController", "Open Door", None))
-        self.CloseDoor.setText(_translate("SimController", "Close Door", None))
+        self.closeDoor.setText(_translate("SimController", "Close Door", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("SimController", "Environment", None))
         self.FakeSay.setText(_translate("SimController", "Fake Say", None))
         self.FakeRec.setText(_translate("SimController", "Fake Rec", None))
@@ -104,4 +107,3 @@ class Ui_SimController(object):
         # self.HumanWave.setText(_translate("SimController", "Max", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("SimController", "HRI", None))
         self.menuPepper_Sim_Controller.setTitle(_translate("SimController", "Pepper Sim Controller", None))
-
