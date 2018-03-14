@@ -16,7 +16,7 @@ class Editor(QtGui.QMainWindow):
         self.ui.FakeSay.clicked.connect(lambda: fake_say_service.say(self.ui.SayText.text()))
         self.ui.FakeRec.clicked.connect(lambda: fake_rec_service.say(self.ui.RecText.text()))
         self.ui.openDoor.clicked.connect(lambda: opendoor_service.say(self.ui.doorSelector.currentText() + "#open"))
-        self.ui.CloseDoor.clicked.connect(lambda: opendoor_service.say(self.ui.doorSelector.currentText() + "#close"))
+        self.ui.closeDoor.clicked.connect(lambda: opendoor_service.say(self.ui.doorSelector.currentText() + "#close"))
         self.ui.waveButton.clicked.connect(lambda: wave_service.say("wave"))
         self.show()
 
