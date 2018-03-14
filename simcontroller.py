@@ -47,7 +47,7 @@ class Ui_SimController(object):
         self.doorSelector.setGeometry(QtCore.QRect(150, 20, 99, 27))
         self.closeDoor.setObjectName(_fromUtf8("doorSelector"))
         # TODO fix this for a specific setting, or make this generally applicable
-        self.doorSelector.addItems(['All', 'Auto_Door', 'Cube.005', 'Cube.006', 'Cube.011'])
+        self.doorSelector.addItems(['Front_Door', 'Back_Door', 'Auto_Door', 'All'])
 
         self.tabWidget.addTab(self.tab, _fromUtf8(""))
         self.tab_2 = QtGui.QWidget()
